@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@media print {
+  body { background-color: white; }
+  .no-print { display: none !important; }
+  .print-break-inside-avoid { break-inside: avoid; }
+  .print-full-width { width: 100% !important; max-width: none !important; }
+  .print-shadow-none { box-shadow: none !important; border: 1px solid #ddd !important; }
+}
